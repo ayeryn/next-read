@@ -1,5 +1,5 @@
 // import BookCard from "./components/BookCard";
-import ProductCard from "./components/ProductCard";
+import ProductCard from "./components/ProductCard/ProductCard";
 import styles from "./page.module.css";
 // import Link from "next/link";
 

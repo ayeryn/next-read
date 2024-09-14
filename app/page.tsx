@@ -6,10 +6,11 @@ import Link from "next/link";
 export default function Home() {
   return (
       <main className={styles.main}>
-        <h1>Next Read</h1>
+        <h1 className="bg-primary">Next Read</h1>
         <p>Welcome to your personalized reading list!</p>
         {/* <BookCard /> */}
         <Link href="/users">Users</Link>
+        <Link href="/books">Books</Link>
         <ProductCard />
       </main>
   );

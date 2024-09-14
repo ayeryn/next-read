@@ -38,3 +38,4 @@ next-env.d.ts
 # Site-specific:
 /.vscode
 /notes
+app/types/env.d.ts

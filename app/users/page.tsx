@@ -19,7 +19,6 @@ const Users = async () => {
   return (
     <main>
       <h1>Users</h1>
-      {/* Dynamic rendering => ts updates every time it's refreshed */}
       <p>{new Date().toLocaleTimeString()}</p>
       <table className='table table-bordered'>
         <thead>

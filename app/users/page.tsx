@@ -9,12 +9,12 @@ interface User {
 const Users = async () => {
   // 1. Static Rendering 
   // Static rendering by fetch() default
-  // const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
   
   // 2. Disable cache
-  const res = await fetch("https://jsonplaceholder.typicode.com/users", {
-    "cache": "no-store"
-  });
+  // const res = await fetch("https://jsonplaceholder.typicode.com/users", {
+    // "cache": "no-store"
+  // });
   const users: User[] = await res.json();
   return (
     <main>

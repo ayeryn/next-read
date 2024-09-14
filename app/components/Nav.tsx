@@ -12,6 +12,15 @@ const Nav = () => {
         <ul className="menu menu-horizontal px-1">
           <li><Link href="/users">Users</Link></li>
           <li><Link href="/books">Books</Link></li>
+          <li><button className="btn btn-accent btn-sm" onClick={()=>{}}>
+              Sign Up
+            </button>
+          </li>
+          <li>
+            <button className="btn btn-primary btn-sm" onClick={()=>{}}>
+              Log In
+            </button>
+          </li>
         </ul>
       </div>
     </div>

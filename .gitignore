@@ -37,4 +37,4 @@ next-env.d.ts
 
 # Site-specific:
 /.vscode
-Notes.md
+/notes

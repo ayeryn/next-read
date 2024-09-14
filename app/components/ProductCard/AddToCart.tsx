@@ -1,8 +1,12 @@
-import React from 'react'
+'use client';
 
 const AddToCart = () => {
   return (
-    <h1>AddToCart</h1>
+    <div>
+      <button className='btn btn-primary' onClick={()=>console.log("Added to cart!")}>
+        Add To Card 
+      </button>
+    </div>
   )
 }
 

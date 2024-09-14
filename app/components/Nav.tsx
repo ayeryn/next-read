@@ -4,27 +4,37 @@ import {useState, useEffect} from 'react';
 import {signIn, signOut, useSession, getProviders } from 'next-auth/react';
 
 const Nav = () => {
+  const isUserLoggedIn = true;
+
   return (
-    <div className="navbar bg-base-100">
+    <nav className="navbar w-full mb-16 pt-33">
       <div className="flex-1">
-        <Link href="/" className="text-xl">Next Read</Link>
+        <Link href="/" className="flex gap-2 flex-center">
+          Next Read
+        </Link>
       </div>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li><Link href="/users">Users</Link></li>
-          <li><Link href="/books">Books</Link></li>
-          <li><button className="btn btn-accent btn-sm" onClick={()=>{}}>
-              Sign Up
-            </button>
-          </li>
-          <li>
-            <button className="btn btn-primary btn-sm" onClick={()=>{}}>
-              Log In
-            </button>
-          </li>
-        </ul>
+       <div className="flex-none">
+         <ul className="menu menu-horizontal px-1">
+           <li><Link href="/books">Books</Link></li>
+          </ul>
+        </div>
+      <div className="sm:flex hidden">
+        {isUserLoggedIn ? (
+          <div className="flex gap-3 md:gap-5">
+            <Link href="/users">Users</Link>
+            <button className="btn btn-primary btn-sm" onClick={signOut}>
+                Sign Out
+              </button>
+          </div>
+        ) : (
+          <div className="flex gap-3 md:gap-5">
+              <button className="btn btn-primary btn-sm" onClick={()=>{}}>
+                Sign Up
+              </button>
+            </div>
+        )}
       </div>
-    </div>
+    </nav>
   )
 }
 

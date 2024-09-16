@@ -2,22 +2,22 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { signIn, signOut, useSession, getProviders } from "next-auth/react";
+// import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
-const Nav = () => {
-  // const isUserLoggedIn = false;
-  const isUserLoggedIn = true;
+const MainNav = () => {
+  const isUserLoggedIn = false;
+  // const isUserLoggedIn = true;
 
-  const [providers, setProviders] = useState<any>(null);
+  // const [providers, setProviders] = useState<any>(null);
   const [toggleDropdown, setToggleDropdown] = useState(false);
-  useEffect(() => {
-    const setAuthProviders = async () => {
-      const response = await getProviders();
-      setProviders(response);
-    };
+  // useEffect(() => {
+  //   const setAuthProviders = async () => {
+  //     const response = await getProviders();
+  //     setProviders(response);
+  //   };
 
-    setAuthProviders();
-  }, []);
+  //   setAuthProviders();
+  // }, []);
 
   return (
     <nav className="navbar bg-base-100">
@@ -43,7 +43,7 @@ const Nav = () => {
             <button
               type="button"
               className="btn btn-primary btn-sm"
-              onClick={signOut}>
+              onClick={() => {}}>
               Sign Out
             </button>
             <Link href="/">
@@ -58,7 +58,8 @@ const Nav = () => {
           </div>
         ) : (
           <>
-            {providers &&
+            {/* <SignIn /> */}
+            {/* {providers &&
               Object.values(providers).map((provider: any) => (
                 <button
                   type="button"
@@ -67,7 +68,7 @@ const Nav = () => {
                   className="btn btn-primary btn-sm">
                   Sign In
                 </button>
-              ))}
+              ))} */}
           </>
         )}
       </div>
@@ -120,4 +121,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default MainNav;

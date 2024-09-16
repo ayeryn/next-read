@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Nav from "./components/Nav";
-import Provider from "./components/Provider";
+import Header from "./components/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,10 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="lemonade">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {/* <Provider children={} session={}> */}
-        <Nav />
-        {children}
-        {/* </Provider> */}
+        <div className="flex h-full min-h-screen w-full flex-col justify-between">
+          <Header />
+          <main className="mx-auto w-full max-w-3xl flex-auto px-4 py-4 sm:px-6 md:py-6">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );

@@ -1,24 +1,15 @@
-import {Schema, model, models} from 'mongoose'
+import mongoose from "mongoose";
 
-const UserSchema = new Schema({
-  email: {
-    type: String,
-    unique: [true, "Email already exists"],
-    required: [true, "Email is required"]
-  },
-  username :{
-    type: String,
-    unique: [true, "Username already exists"],
-    required: [true, "Username is required"],
-    match: [
-      /^(?=.{6,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/,
-      "Username invalid, it should contain 8-20 alphanumeric letters and be unique!",
-    ],
-  },
-  image :{
-    type: String
-  }
-})
+// Schema
+const userSchema = new mongoose.Schema({
+  username: { type: String, required: true },
+  email: { type: String, required: true },
+  password: { type: String, select: false },
+  image: { type: String },
+  authProviderId: { type: String }, // Google & Github Providers
+});
 
-const User = models.User || model("User", UserSchema);
-export default User;
+// Model
+// if there exists a User, user it
+// else create a User with userSchema
+export const User = mongoose.models?.User || mongoose.model("User", userSchema);

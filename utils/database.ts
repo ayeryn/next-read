@@ -1,23 +1,19 @@
 import mongoose from "mongoose";
 
-let isConnected = false;
+if (!process.env.MONGODB_URI) {
+  throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
+}
 
-export const connectToDB = async() =>{
-  mongoose.set('strictQuery', true);
+const uri: string = process.env.MONGODB_URI;
 
-  if(isConnected){
-    console.log("Mongo DB is already connected")
-    return;
-  }
+export const connectToDB = async () => {
+  mongoose.set("strictQuery", true);
 
   try {
-    await mongoose.connect(process.env.MONGODB_URI,{
-      dbName: "Next Read"
-    });
-
-    isConnected = true;
+    await mongoose.connect(uri);
     console.log("Mongo DB connected!");
   } catch (error) {
-    console.log(error);
+    console.error(`Error: ${error.message}`);
+    process.exit(1);
   }
-}
+};

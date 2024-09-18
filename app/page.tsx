@@ -8,7 +8,6 @@ export default function Home() {
         What is your next read?
       </h1>
       <p>Welcome to your personalized reading list!</p>
-      {/* <ProductCard /> */}
     </main>
   );
 }

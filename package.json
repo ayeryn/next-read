@@ -11,9 +11,11 @@
   "dependencies": {
     "@moesaid/cleopatra": "^1.1.1",
     "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.9.0",
     "mongoose": "^8.6.2",
     "next": "14.2.9",
-    "next-auth": "^4.24.7",
+    "next-auth": "5.0.0-beta.21",
     "react": "^18",
     "react-dom": "^18"
   },

@@ -26,16 +26,14 @@ const Nav = () => {
           <li>
             <Link href="/private/books">Books</Link>
           </li>
+          <li>
+            <Link href="/signin">Sign In</Link>
+          </li>
           <form>
-            <Button type="button" className="btn btn-secondary btn-sm">
-              <Link href="/signin">Sign In</Link>
-            </Button>
-          </form>
-          {/* <form>
             <Button type="button" className="btn btn-outline btn-sm">
               Sign Out
             </Button>
-          </form> */}
+          </form>
         </ul>
       </nav>
     </div>

@@ -20,16 +20,16 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     signIn: async ({ user, account }) => {
       console.log("account: ", account);
       console.log("user: ", user);
-      if (account?.provider === "google") {
+      /**
+       * user:  {
+       *  id: 'xxxxx',
+       *  name: 'Eryn Li',
+       *  email: 'xxxx@gmail.com',
+       *  image: 'https://lh3.googleusercontent.com/a/xxxx'
+       * }
+       */
+      if (account?.provider === "google" || account?.provider === "github") {
         try {
-          /**
-           * user:  {
-           *  id: 'xxxxx',
-           *  name: 'Eryn Li',
-           *  email: 'xxxx@gmail.com',
-           *  image: 'https://lh3.googleusercontent.com/a/xxxx'
-           * }
-           */
           const { email, name, image, id } = user;
 
           await connectToDb();
@@ -48,7 +48,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         } catch (error) {
           throw new Error("Error while creating user");
         }
-      }
+      } 
       return false;
     },
   },

@@ -1,8 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { getSession } from "@/lib/getSession";
 
-const Nav = () => {
+const Nav = async () => {
+  const session = await getSession();
+  const user = session?.user;
+
   return (
     <div className="mx-auto flex h-16 w-full items-center">
       <nav className="navbar bg-base-200">
@@ -26,9 +30,14 @@ const Nav = () => {
           <li>
             <Link href="/private/books">Books</Link>
           </li>
-          <li>
-            <Link href="/signin">Sign In</Link>
-          </li>
+          {!user ? (
+            <li>
+              <Link href="/signin">Sign In</Link>
+            </li>
+          ) : (
+            <></>
+          )}
+
           <form>
             <Button type="button" className="btn btn-outline btn-sm">
               Sign Out

@@ -1,11 +1,12 @@
 import { IconBrandGoogle, IconBrandGithub } from "@tabler/icons-react";
 import { signIn } from "@/auth";
 import { getSession } from "@/lib/getSession";
+import { redirect } from "next/navigation";
 
 const SignIn = async () => {
   const session = await getSession();
-  // const user = session?.user;
-  if (session) console.log("*******", session);
+  const user = session?.user;
+  if (user) redirect("/");
 
   return (
     <div className="mt-10 max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white border border-[#121212]  dark:bg-black">

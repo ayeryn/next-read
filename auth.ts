@@ -21,9 +21,11 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       if (account?.provider === "google") {
         try {
           const { email, name, image, id } = user;
+          
           await connectToDb();
           const existingUser = await User.findOne({ email });
           if (!existingUser) {
+            console.log("Need to create user for ", email);
             await User.create({ email, name, image, authProviderId: id });
           }
           return true;

@@ -61,7 +61,10 @@ const Nav = async () => {
           )}
 
           <form>
-            <Button type="button" className="btn btn-outline btn-sm">
+            <Button
+              type="button"
+              variant="secondary"
+              className="btn-outline btn-sm text-neutral hover:text-primary hover:font-semibold">
               Sign Out
             </Button>
           </form>

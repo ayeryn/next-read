@@ -18,21 +18,43 @@ const Nav = async () => {
               width={40}
               height={40}
             />
-            <p>Next Read</p>
+            <p className="font-medium">Next Read</p>
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-4 list-none">
           <li>
-            <Link href="/users">Users</Link>
+            <Link
+              href="/users"
+              className="text-neutral hover:text-primary hover:font-semibold">
+              Users
+            </Link>
           </li>
           <li>
-            <Link href="/private/books">Books</Link>
+            <Link
+              href="/private/books"
+              className="text-neutral hover:text-primary hover:font-semibold">
+              Books
+            </Link>
           </li>
+          {user ? (
+            <li>
+              <Link
+                href="/lists"
+                className="text-neutral hover:text-primary hover:font-semibold">
+                My Lists
+              </Link>
+            </li>
+          ) : (
+            <></>
+          )}
           {!user ? (
             <li>
-              <Link href="/signin">Sign In</Link>
+              <Link
+                href="/signin"
+                className="text-neutral hover:text-primary hover:font-semibold">
+                Sign In
+              </Link>
             </li>
           ) : (
             <></>

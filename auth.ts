@@ -18,15 +18,31 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     },
 
     signIn: async ({ user, account }) => {
+      console.log("account: ", account);
+      console.log("user: ", user);
       if (account?.provider === "google") {
         try {
+          /**
+           * user:  {
+           *  id: 'xxxxx',
+           *  name: 'Eryn Li',
+           *  email: 'xxxx@gmail.com',
+           *  image: 'https://lh3.googleusercontent.com/a/xxxx'
+           * }
+           */
           const { email, name, image, id } = user;
-          
+
           await connectToDb();
           const existingUser = await User.findOne({ email });
+          console.log("user...", existingUser);
           if (!existingUser) {
             console.log("Need to create user for ", email);
-            await User.create({ email, name, image, authProviderId: id });
+            await User.create({
+              email: email,
+              username: name?.replace(" ", "").toLowerCase(),
+              image: image,
+              authProviderId: id,
+            });
           }
           return true;
         } catch (error) {

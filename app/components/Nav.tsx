@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { getSession } from "@/lib/getSession";
+import { signOut } from "@/auth";
 
 const Nav = async () => {
   const session = await getSession();
@@ -49,25 +50,28 @@ const Nav = async () => {
             <></>
           )}
           {!user ? (
-            <li>
-              <Link
-                href="/signin"
-                className="text-neutral hover:text-primary hover:font-semibold">
-                Sign In
-              </Link>
-            </li>
+            <>
+              <Button asChild variant="secondary">
+                <Link
+                  href="/signin"
+                  className="text-neutral hover:text-primary hover:font-semibold">
+                  Sign In
+                </Link>
+              </Button>
+            </>
           ) : (
-            <></>
+            <form
+              action={async () => {
+                "use server";
+                await signOut();
+              }}>
+              <Button
+                variant="secondary"
+                className="btn-sm text-neutral hover:text-primary hover:font-semibold">
+                Sign Out
+              </Button>
+            </form>
           )}
-
-          <form>
-            <Button
-              type="button"
-              variant="secondary"
-              className="btn-outline btn-sm text-neutral hover:text-primary hover:font-semibold">
-              Sign Out
-            </Button>
-          </form>
         </ul>
       </nav>
     </div>

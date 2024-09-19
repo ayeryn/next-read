@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 interface User {
   id: number;
@@ -7,20 +7,20 @@ interface User {
 }
 
 const Users = async () => {
-  // 1. Static Rendering 
+  // 1. Static Rendering
   // Static rendering by fetch() default
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  
+
   // 2. Disable cache
   // const res = await fetch("https://jsonplaceholder.typicode.com/users", {
-    // "cache": "no-store"
+  // "cache": "no-store"
   // });
   const users: User[] = await res.json();
   return (
     <main>
       <h1>Users</h1>
       <p>{new Date().toLocaleTimeString()}</p>
-      <table className='table table-bordered'>
+      <table className="table table-bordered">
         <thead>
           <tr>
             <th>User Name</th>
@@ -28,14 +28,16 @@ const Users = async () => {
           </tr>
         </thead>
         <tbody>
-          {users.map(user => <tr key={user.id}>
-            <td>{user.name}</td>
-            <td>{user.email}</td>
-            </tr>)}
+          {users.map((user) => (
+            <tr key={user.id}>
+              <td>{user.name}</td>
+              <td>{user.email}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </main>
-  )
-}
+  );
+};
 
-export default Users 
+export default Users;

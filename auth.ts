@@ -18,8 +18,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     },
 
     signIn: async ({ user, account }) => {
-      console.log("account: ", account);
-      console.log("user: ", user);
       /**
        * user:  {
        *  id: 'xxxxx',
@@ -34,9 +32,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
           await connectToDb();
           const existingUser = await User.findOne({ email });
-          console.log("user...", existingUser);
           if (!existingUser) {
-            console.log("Need to create user for ", email);
             await User.create({
               email: email,
               username: name?.replace(" ", "").toLowerCase(),
@@ -48,7 +44,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         } catch (error) {
           throw new Error("Error while creating user");
         }
-      } 
+      }
       return false;
     },
   },

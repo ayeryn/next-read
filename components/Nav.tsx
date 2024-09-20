@@ -41,7 +41,7 @@ const Nav = async () => {
           {user ? (
             <li>
               <Link
-                href="/lists"
+                href="/private/lists"
                 className="text-neutral hover:text-primary hover:font-semibold">
                 My Lists
               </Link>

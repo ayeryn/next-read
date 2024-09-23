@@ -16,5 +16,10 @@
 
 ### Issues
 
-1. "Access Denied" after clicking on signin with google
-2. 
+1. "Access Denied" after clicking on signin with google - figured it out, Schema needed fixing
+
+## 24-9-23
+
+1. List creation
+   1. Use Server Component `Form` in `create-list/page.tsx`
+   2. Fetch data using `Form` without API endpoints

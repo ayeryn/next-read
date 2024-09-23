@@ -64,6 +64,31 @@
 
 - Render at request time
 
+### Choosing how to fetch data
+#### API layer
+APIs are an intermediary layer between your application code and database. There are a few cases where you might use an API:
+- If you're using 3rd party services that provide an API
+- If you're fetching data from the client, you want to have an API layer than runs on the server to avoid exposing your database secrets to the client.
+
+#### Database queries
+When you're creating a full-stack application, you'll also need to write logic to interact with your database. For relational databases like Postgres, you can od this with SQL or with an ORM.
+
+There are a few cases where you have to write database queries:
+- When creating your API endpoints, you need to write logic to interact with your database.
+- **If you're using React Server Components (fetching data on the server), you can skip the API layer**, and query your database directly without risking exposing your database secrets to the client.
+
+### Using Server Components to Fetch Data
+By default, Next.js applications use React Server Components. Fetching data with Server Components is a relatively new approach and there are a few benefits of using them:
+- Server Components support promises, providing a simpler solution for asynchronous tasks like data fetching. You can use `async/await` syntax without reaching out for `useEffect`, `useState` or data fetching libraries.
+- Server Component execute on the server, so you can keep expensive data fetches and logic on the server and only send the result to the client.
+- As mentioned before, since Server Component execute on the server, you can query the database directly without an additonal API layer.
+
+### Using SQL
+- SQL is the industry standard for querying relational databases (e.g. ORMs generate SQL under the hood).
+- Having a basic understanding of SQL can help you understand the fundamentals of relational databases, allowing you to aooly your knowledge to other tools.
+- SQL is versatile, allowing you to fetch and manipulate specific data.
+- \*The Vercel Postgres SDK provides protection against SQL injections.
+
 ## TypeScript
 
 ### Interface

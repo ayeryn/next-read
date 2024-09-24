@@ -6,6 +6,7 @@
 
 - [Notes](#notes)
   - [TODO’s](#todos)
+  - [Hooks](#hooks)
   - [Data Fetching](#data-fetching)
   - [Rendering](#rendering)
     - [Static Rendering](#static-rendering)
@@ -17,9 +18,9 @@
     - [`global.css`](#globalcss)
     - [CSS Module](#css-module)
       - [Rendering](#rendering-1)
-    - [DaisyUI](#daisyuihttpsdaisyuicomdocsuse)
-    - [shadcn/ui](#shadcnuihttpsuishadcncomdocs)
-    - [Tabler Icons](#tabler-iconshttpstableriodocsgetting-started)
+    - [DaisyUI](#daisyui)
+    - [shadcn/ui](#shadcnui)
+    - [Tabler Icons](#tabler-icons)
 
 <!-- /code_chunk_output -->
 
@@ -27,6 +28,10 @@
 
 - dev has stashed changes
 -
+
+## Hooks
+
+Hooks are **functions** that let you "hook into" React state and lifecycle features form function components. Hooks don't work inside classes - they let you use React without classes.
 
 ## Data Fetching
 

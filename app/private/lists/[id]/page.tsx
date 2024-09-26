@@ -1,23 +1,26 @@
+import BookList from "@/components/book-list";
 import { getListById } from "@/lib/actions";
 import { redirect } from "next/navigation";
 import React from "react";
 
 export default async function Page({
-  searchParams,
+  params,
 }: {
-  searchParams?: {
-    id?: string;
+  params: {
+    id: string;
   };
 }) {
-  const listId = searchParams?.id;
+  const listId = params.id;
   if (!listId) redirect("/private/lists");
 
   const list = await getListById(listId);
   return (
-    <div>
-      <h1 className="text-2xl">List Page</h1>
-      <p>{list.name}</p>
-      <p>{list.description}</p>
-    </div>
+    <main>
+      <div className="w-full flex flex-col justify-center items-center">
+        <h1 className="text-2xl font-semibold">{list.name}</h1>
+        <p className="text-sm mt-2">{list.description}</p>
+      </div>
+      <BookList />
+    </main>
   );
 }

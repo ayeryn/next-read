@@ -12,4 +12,4 @@ const ListSchema = new mongoose.Schema({
   },
 });
 
-export const List = mongoose.models?.List || mongoose.model("Lst", ListSchema);
+export const List = mongoose.models?.List || mongoose.model("List", ListSchema);

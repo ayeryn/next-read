@@ -22,6 +22,8 @@ export async function createList(formData: FormData) {
   const session = await getSession();
   const user = session?.user;
   if (!user) redirect("/");
+  console.log("Session - ", session);
+  console.log("User - ", user);
 
   const validatedFields = CreateList.safeParse({
     name: formData.get("name"),
@@ -37,7 +39,7 @@ export async function createList(formData: FormData) {
 
   const { name, description } = validatedFields.data;
   try {
-    console.log("Creating list... - ", validatedFields.data);
+    console.log("Creating list... - ", { name, description, creator: user.id });
     await List.create({ name, description, creator: user.id });
     console.log("List created successfully");
   } catch (error) {
@@ -46,4 +48,35 @@ export async function createList(formData: FormData) {
 
   revalidatePath("private/lists");
   redirect("/private/lists");
+}
+
+// Get all lists created by current user
+export async function getMyLists() {
+  const session = await getSession();
+  const user = session?.user;
+  if (!user) redirect("/");
+
+  try {
+    const lists = await List.find({
+      creator: user.id,
+    }).populate("creator");
+    // console.log("Fetched lists: ", lists);
+    return lists;
+  } catch (error) {
+    return { message: "Database error: Failed to find your lists." };
+  }
+}
+
+export async function getListById(listId: string) {
+  const session = await getSession();
+  const user = session?.user;
+  if (!user) redirect("/");
+
+  try {
+    const list = await List.findById(listId);
+    console.log("Fetched list: ", list?.name);
+    return list;
+  } catch (error) {
+    return { message: "Database error: Failed to find list - " + listId };
+  }
 }

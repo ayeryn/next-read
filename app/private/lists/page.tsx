@@ -1,4 +1,3 @@
-"use client";
 import { Button } from "@/components/ui/button";
 import { IconPlaylistAdd } from "@tabler/icons-react";
 import {
@@ -10,19 +9,10 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import Link from "next/link";
+import { getMyLists } from "@/lib/actions";
 
-interface TestList {
-  id: number;
-  name: string;
-  description: string;
-}
-
-const mockLists: TestList[] = [
-  { id: 1, name: "fav", description: "favorite books" },
-  { id: 2, name: "To Read", description: "TBR" },
-];
-const Lists = () => {
-  const lists = mockLists; // Use mock data for now
+export default async function Lists() {
+  const lists = await getMyLists();
   return (
     <main>
       <div className="grid grid-cols-3 gap-4 items-center justify-center">
@@ -50,7 +40,9 @@ const Lists = () => {
           <TableBody>
             {lists.map((list) => (
               <TableRow key={list.id}>
-                <TableCell>{list.name}</TableCell>
+                <TableCell>
+                  <Link href={`/private/lists/${list.id}`}>{list.name}</Link>
+                </TableCell>
                 <TableCell>{list.description}</TableCell>
               </TableRow>
             ))}
@@ -61,6 +53,4 @@ const Lists = () => {
       )}
     </main>
   );
-};
-
-export default Lists;
+}

@@ -32,7 +32,7 @@ const Lists = () => {
         </div>
         <div>
           <Button asChild className="ml-5">
-            <Link href="/create-list">
+            <Link href="/private/lists/create">
               <IconPlaylistAdd className="mr-1" />
               New List
             </Link>

@@ -5,7 +5,7 @@ const ListSchema = new mongoose.Schema({
     type: String,
     required: [true, "List name is required!"],
   },
-  image: { type: String },
+  description: { type: String },
   creator: {
     type: Schema.Types.ObjectId,
     ref: "User",

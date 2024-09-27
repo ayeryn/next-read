@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { IconPlaylistAdd } from "@tabler/icons-react";
+import { IconEdit, IconPlaylistAdd, IconTrashX } from "@tabler/icons-react";
 import {
   Table,
   TableBody,
@@ -35,6 +35,9 @@ export default async function Lists() {
             <TableRow>
               <TableHead>List Name</TableHead>
               <TableHead>Description</TableHead>
+              <TableHead>
+                <span className="sr-only">Edit</span>
+              </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -44,6 +47,18 @@ export default async function Lists() {
                   <Link href={`/private/lists/${list.id}`}>{list.name}</Link>
                 </TableCell>
                 <TableCell>{list.description}</TableCell>
+                <TableCell>
+                  <Button variant="outline">
+                    <Link href={`/private/lists/${list.id}/edit`}>
+                      <IconEdit />
+                    </Link>
+                  </Button>
+                  <Button variant="outline">
+                    <Link href="/private/lists/">
+                      <IconTrashX />
+                    </Link>
+                  </Button>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

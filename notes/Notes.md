@@ -24,6 +24,7 @@
   - [Tabler Icons](#tabler-icons)
 - [Google Books](#google-books)
   - [Axios](#axios)
+    - [CommonJS Usage](#commonjs-usage)
 - [Links](#links)
 
 <!-- /code_chunk_output -->
@@ -255,6 +256,20 @@ export default Dashboard;
 
 ## Axios
 
+[Axios][10] is a [promise-based][11] HTTP Client for `node.js` and the browser. It is _isomorphic_ (= it can run in the browser and nodejs with the same codebase).
+
+On the server-side, it uses hte native node.js `http` module, while on the client (browser) it uses `XMLHttpRequests`.
+
+### [CommonJS][12] Usage
+
+In order to gain the TypeScript typings (for intellisense / autocomplete) while using CommonJS imports with `require()` use the following approach:
+
+```js
+const axios = require("axios").default;
+
+// axios.<method> will now provide autocomplete and parameter typings
+```
+
 # Links
 
 [1]: https://react.dev/reference/react/hooks
@@ -266,3 +281,6 @@ export default Dashboard;
 [7]: https://ui.shadcn.com/docs
 [8]: https://ui.shadcn.com/docs/installation/next
 [9]: https://tabler.io/docs/getting-started
+[10]: https://axios-http.com/docs/intro
+[11]: https://javascript.info/promise-basics
+[12]: https://axios-http.com/docs/example

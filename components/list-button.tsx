@@ -5,7 +5,7 @@ import Link from "next/link";
 export function CreateList() {
   return (
     <button className="btn ml-5 rounded-md border p-2 hover:bg-gray-100">
-      <Link href="/private/lists/create" className="flex items-center">
+      <Link href="/private/lists/create" className="flex items-center px-2">
         <IconPlaylistAdd className="mr-1" />
         New List
       </Link>

@@ -6,6 +6,7 @@ import { revalidatePath } from "next/cache";
 import { List } from "@/models/list";
 import { z } from "zod";
 import { User } from "@/models/user";
+import connectToDb from "./db";
 
 // Validate required data and specify error messages
 const FormSchema = z.object({
@@ -24,6 +25,7 @@ export async function createList(formData: FormData) {
   const sessionUser = session?.user;
   if (!sessionUser) redirect("/");
 
+  await connectToDb();
   const user = await User.findOne({ email: sessionUser.email });
 
   const validatedFields = CreateList.safeParse({
@@ -56,10 +58,10 @@ export async function getMyLists() {
   const sessionUser = session?.user;
   if (!sessionUser) redirect("/");
 
-  const user = await User.findOne({ email: sessionUser.email });
-  const userId = user._id.toString();
-
   try {
+    await connectToDb();
+    const user = await User.findOne({ email: sessionUser.email });
+    const userId = user._id.toString();
     const lists = await List.find({
       creator: userId,
     });
@@ -75,6 +77,7 @@ export async function getListById(listId: string) {
   if (!user) redirect("/");
 
   try {
+    await connectToDb();
     const list = await List.findById(listId);
     return list;
   } catch (error) {

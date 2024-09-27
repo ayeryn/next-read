@@ -10,12 +10,13 @@ import {
 } from "@/components/ui/table";
 import Link from "next/link";
 import { getMyLists } from "@/lib/actions";
+import { DeleteList, UpdateList } from "@/components/list-button";
 
 export default async function Lists() {
   const lists = await getMyLists();
   return (
     <main>
-      <div className="grid grid-cols-3 gap-4 items-center justify-center">
+      <div className="grid grid-cols-3 gap-4 items-center justify-center w-full">
         <div></div>
         <div>
           <h1 className="text-2xl font-semibold">My Lists</h1>
@@ -43,21 +44,17 @@ export default async function Lists() {
           <TableBody>
             {lists.map((list) => (
               <TableRow key={list.id}>
-                <TableCell>
+                <TableCell className="whitespace-nowrap px-3 py-3">
                   <Link href={`/private/lists/${list.id}`}>{list.name}</Link>
                 </TableCell>
-                <TableCell>{list.description}</TableCell>
+                <TableCell className="whitespace-nowrap px-3 py-3">
+                  {list.description}
+                </TableCell>
                 <TableCell>
-                  <Button variant="outline">
-                    <Link href={`/private/lists/${list.id}/edit`}>
-                      <IconEdit />
-                    </Link>
-                  </Button>
-                  <Button variant="outline">
-                    <Link href="/private/lists/">
-                      <IconTrashX />
-                    </Link>
-                  </Button>
+                  <div className="flex justify-end gap-3">
+                    <UpdateList id={list.id} />
+                    <DeleteList id={list.id} />
+                  </div>
                 </TableCell>
               </TableRow>
             ))}

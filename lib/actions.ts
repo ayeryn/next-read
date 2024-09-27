@@ -141,3 +141,15 @@ export async function updateList(listId: string, formData: FormData) {
   revalidatePath("private/lists");
   redirect("/private/lists");
 }
+
+export async function deleteList(listId: string) {
+  try {
+    await connectToDb();
+    const existingList = await List.findByIdAndDelete(listId);
+    console.log("List deleted successfully");
+  } catch (error) {
+    return { message: "Database error: Failed to delete list" };
+  }
+
+  revalidatePath("private/lists");
+}

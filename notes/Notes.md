@@ -6,7 +6,8 @@
 
 - [Notes](#notes)
   - [TODO’s](#todos)
-  - [Hooks](#hooks)
+  - [Hooks](#hookshttpsreactdevreferencereacthooks)
+    - [Effect Hook](#effect-hook)
   - [Data Fetching](#data-fetching)
   - [Rendering](#rendering)
     - [Static Rendering](#static-rendering)
@@ -18,9 +19,9 @@
     - [`global.css`](#globalcss)
     - [CSS Module](#css-module)
       - [Rendering](#rendering-1)
-    - [DaisyUI](#daisyui)
-    - [shadcn/ui](#shadcnui)
-    - [Tabler Icons](#tabler-icons)
+    - [DaisyUI](#daisyuihttpsdaisyuicomdocsuse)
+    - [shadcn/ui](#shadcnuihttpsuishadcncomdocs)
+    - [Tabler Icons](#tabler-iconshttpstableriodocsgetting-started)
 
 <!-- /code_chunk_output -->
 
@@ -29,9 +30,42 @@
 - dev has stashed changes
 -
 
-## Hooks
+## [Hooks](https://react.dev/reference/react/hooks)
 
-Hooks are **functions** that let you "hook into" React state and lifecycle features form function components. Hooks don't work inside classes - they let you use React without classes.
+Hooks are **functions** that let you "hook into" React **state** and lifecycle features form function components.
+
+- Hooks don't work inside classes - they let you use React without classes.
+
+### Effect Hook
+
+"Side effects" (or "effects" for short) can affect other components and can't be done during rendering. E.g.:
+
+- data fetching
+- subscriptions
+- manually changing the DOM from React components
+
+The Effect Hook, `useEffect`, adds the ability to perform side effects from a function component. It serves the same purpose as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` in React classes, but unified into a single API.
+
+```js
+import React, { useState, useEffect } from "react";
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
+}
+```
 
 ## Data Fetching
 
@@ -58,7 +92,7 @@ Hooks are **functions** that let you "hook into" React state and lifecycle featu
 
 ## Rendering
 
-![Rendering](diagrams/rendering.drawio.svg)
+<!-- ![Rendering](diagrams/rendering.drawio.svg) -->
 
 ### Static Rendering
 

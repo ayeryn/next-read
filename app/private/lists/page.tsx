@@ -11,6 +11,7 @@ import { getMyLists } from "@/lib/actions";
 import { CreateList, DeleteList, UpdateList } from "@/components/list-button";
 
 export default async function Lists() {
+  // TODO: Add a message for no lsits
   const lists = await getMyLists();
   return (
     <main>
@@ -54,7 +55,9 @@ export default async function Lists() {
           </TableBody>
         </Table>
       ) : (
-        <></>
+        <>
+          <h4>You don't have any list. Create a new one!</h4>
+        </>
       )}
     </main>
   );

@@ -1,7 +1,16 @@
 import { deleteList } from "@/lib/actions";
-import { IconEdit, IconTrashX } from "@tabler/icons-react";
+import { IconEdit, IconPlaylistAdd, IconTrashX } from "@tabler/icons-react";
 import Link from "next/link";
 
+export function CreateList() {
+  return (
+    <button className="btn ml-5 rounded-md border p-2 hover:bg-gray-100">
+      <Link href="/private/lists/create">
+        <IconPlaylistAdd className="mr-1" />
+      </Link>
+    </button>
+  );
+}
 export function UpdateList({ id }: { id: string }) {
   return (
     <button className="rounded-md border p-2 hover:bg-gray-100">

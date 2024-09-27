@@ -1,42 +1,44 @@
-# Notes
-
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
+# Notes
+
 - [Notes](#notes)
-  - [TODO’s](#todos)
-  - [Hooks](#hookshttpsreactdevreferencereacthooks)
-    - [Effect Hook](#effect-hook)
-  - [Data Fetching](#data-fetching)
-  - [Rendering](#rendering)
-    - [Static Rendering](#static-rendering)
-    - [Dynamic Rendering](#dynamic-rendering)
-  - [TypeScript](#typescript)
-    - [Interface](#interface)
-  - [Mock Data](#mock-data)
-  - [Tailwind CSS](#tailwind-css)
-    - [`global.css`](#globalcss)
-    - [CSS Module](#css-module)
-      - [Rendering](#rendering-1)
-    - [DaisyUI](#daisyuihttpsdaisyuicomdocsuse)
-    - [shadcn/ui](#shadcnuihttpsuishadcncomdocs)
-    - [Tabler Icons](#tabler-iconshttpstableriodocsgetting-started)
+- [TODO’s](#todos)
+- [Hooks](#hooks)
+  - [Effect Hook](#effect-hook)
+- [Data Fetching](#data-fetching)
+- [Rendering](#rendering)
+  - [Static Rendering](#static-rendering)
+  - [Dynamic Rendering](#dynamic-rendering)
+- [TypeScript](#typescript)
+  - [Interface](#interface)
+- [Mock Data](#mock-data)
+- [Tailwind CSS](#tailwind-css)
+  - [`global.css`](#globalcss)
+  - [CSS Module](#css-module)
+    - [CSS Rendering](#css-rendering)
+  - [DaisyUI](#daisyui)
+  - [shadcn/ui](#shadcnui)
+  - [Tabler Icons](#tabler-icons)
+- [Google Books](#google-books)
+  - [Axios](#axios)
+- [Links](#links)
 
 <!-- /code_chunk_output -->
 
-## TODO’s
+# TODO’s
 
-- dev has stashed changes
--
+- [ ] Hook to Google Books API
 
-## [Hooks](https://react.dev/reference/react/hooks)
+# [Hooks][1]
 
 Hooks are **functions** that let you "hook into" React **state** and lifecycle features form function components.
 
 - Hooks don't work inside classes - they let you use React without classes.
 
-### Effect Hook
+## Effect Hook
 
 "Side effects" (or "effects" for short) can affect other components and can't be done during rendering. E.g.:
 
@@ -67,7 +69,7 @@ function Example() {
 }
 ```
 
-## Data Fetching
+# Data Fetching
 
 - NextJS comes with a built-in data cache
 
@@ -90,28 +92,28 @@ function Example() {
   const users = response.json();
   ```
 
-## Rendering
+# Rendering
 
 <!-- ![Rendering](diagrams/rendering.drawio.svg) -->
 
-### Static Rendering
+## Static Rendering
 
 - Render at build time
 - By default, `fetch()` caches responses.
 
-### Dynamic Rendering
+## Dynamic Rendering
 
 - Render at request time
 
-## TypeScript
+# TypeScript
 
-### Interface
+## Interface
 
 An interface declaration is another way to name an object type:
 
 ```js
 interface Point {
-  x: nunber;
+  x: number;
   y: number;
 }
 
@@ -123,9 +125,9 @@ function printCoord(pt: Point) {
 printCoord({ x: 100, y: 100 });
 ```
 
-## Mock Data
+# Mock Data
 
-https://jsonplaceholder.typicode.com/ is a mock data API.
+[{JSON} Placeholder][2] is a mock data API.
 
 ```js
 fetch("https://jsonplaceholder.typicode.com/todos/1")
@@ -141,24 +143,22 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
  */
 ```
 
-## Tailwind CSS
+# Tailwind CSS
 
 A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
 
-- Includes many [small utility classes](https://tailwindcss.com/docs/utility-first), like Padding, Margins, etc.
-- [Customize color palette](https://tailwindcss.com/docs/customizing-colors)
+- Includes many [small utility classes][3], like Padding, Margins, etc.
+- [Customize color palette][4]
 - Designed to be used directly on the component do we don’t have to jump back and forth between the component and the CSS
-  - [Separation of Concern][1] is a design principle for separating a software program into distinct sections such that each section addresses a separate “concern” or a set of information that affects the code of a software program. It is one of the most important concepts that a web solutions architect must internalize.
+  - [Separation of Concern][5] is a design principle for separating a software program into distinct sections such that each section addresses a separate “concern” or a set of information that affects the code of a software program. It is one of the most important concepts that a web solutions architect must internalize.
 - Easy to clean up because we never added CSS of our own
 
-[1]: https://www.newtarget.com/web-insights-blog/separation-of-concerns-in-web-design-and-development/#:~:text=Separation%20of%20Concerns%20(SoC)%20is,web%20solutions%20architect%20must%20internalize.
-
-### `global.css`
+## `global.css`
 
 - Only keeps styles here that are truly global
 - For styles specific to a page or component, use css modules or Tailwind.
 
-### CSS Module
+## CSS Module
 
 A CSS file that is scoped to a component/page. This prevents CSS classes from clashing.
 
@@ -186,9 +186,10 @@ const ProductCard = () => {
 export default ProductCard;
 ```
 
-#### Rendering
+### CSS Rendering
 
 - If we inspect elements, we see a class name generated by tailwind. This helps to prevent clashing of class names.
+
   ```html
   <!-- Notice the class name -->
   <div class="ProductCard_card__KLyHh">
@@ -197,7 +198,9 @@ export default ProductCard;
     <h1>AddToCart</h1>
   </div>
   ```
+
 - `postcss.config.js`
+
   ```js
   module.exports = {
     plugins: {
@@ -207,11 +210,11 @@ export default ProductCard;
   };
   ```
 
-### [DaisyUI](https://daisyui.com/docs/use/)
+## [DaisyUI][6]
 
 The most popular component library for Tailwind CSS.
 
-### [shadcn/ui](https://ui.shadcn.com/docs)
+## [shadcn/ui][7]
 
 > Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
 
@@ -238,12 +241,28 @@ const Dashboard = () => {
 export default Dashboard;
 ```
 
-- [NextJS Installation](https://ui.shadcn.com/docs/installation/next)
+- [NextJS Installation][8]
 
-### [Tabler Icons](https://tabler.io/docs/getting-started)
+## [Tabler Icons][9]
 
 ```html
 <button>
   <IconBrandGoogle />
 </button>
 ```
+
+# Google Books
+
+## Axios
+
+# Links
+
+[1]: https://react.dev/reference/react/hooks
+[2]: https://jsonplaceholder.typicode.com/
+[3]: https://tailwindcss.com/docs/utility-first
+[4]: https://tailwindcss.com/docs/customizing-colors
+[5]: https://www.newtarget.com/web-insights-blog/separation-of-concerns-in-web-design-and-development/#:~:text=Separation%20of%20Concerns%20(SoC)%20is,web%20solutions%20architect%20must%20internalize.
+[6]: https://daisyui.com/docs/use/
+[7]: https://ui.shadcn.com/docs
+[8]: https://ui.shadcn.com/docs/installation/next
+[9]: https://tabler.io/docs/getting-started

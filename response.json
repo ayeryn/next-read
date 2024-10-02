@@ -1,0 +1,669 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1946,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "7iNjDwAAQBAJ",
+      "etag": "Z9/jOwomg24",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/7iNjDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Quilting From Every Angle",
+        "subtitle": "16 Geometric Designs",
+        "authors": ["Nancy Purvis"],
+        "publisher": "Penguin",
+        "publishedDate": "2015-08-27",
+        "description": "Step-by-step instructions for 16 eye-catching designs! Get ready for a bold, graphic approach to quilting with Quilting from Every Angle! Half square triangles (HSTs) are a classic sewing technique at the foundation of a number of traditional quilt blocks. DIY Blogger Nancy Purvis explores what happens when you play with placement, scale, and color of HSTs to achieve bold designs. And she doesn't stop there! Quilting from Every Angle also includes techniques on Flying Geese blocks, Y-seams, paper-piecing, and more. Whether it's acute or obtuse, Nancy's covering all the angles with valuable tips and tricks to achieving precision points. You'll be seaming together finished works, including quilts, throws, and wall pieces that look like they came from trendy designer catalogs--all while mastering the art of angles!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781632500885"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1632500884"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 337,
+        "printType": "BOOK",
+        "categories": ["Crafts & Hobbies"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.1.2.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=7iNjDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=7iNjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=7iNjDwAAQBAJ&printsec=frontcover&dq=quilting&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=7iNjDwAAQBAJ&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Quilting_From_Every_Angle.html?hl=&id=7iNjDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Quilting_From_Every_Angle-sample-epub.acsm?id=7iNjDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=7iNjDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Quilting from Every Angle also includes techniques on Flying Geese blocks, Y-seams, paper-piecing, and more. Whether it&#39;s acute or obtuse, Nancy&#39;s covering all the angles with valuable tips and tricks to achieving precision points."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "4CFjDwAAQBAJ",
+      "etag": "j30KWfQ8rlU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/4CFjDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Quilting Modern",
+        "subtitle": "Techniques and Projects for Improvisational Quilts",
+        "authors": ["Jacquie Gering", "Katie Pedersen"],
+        "publisher": "Penguin",
+        "publishedDate": "2013-08-14",
+        "description": "From two pioneers of today's modern quilting movement, Quilting Modern teaches quilters how to use improvisational techniques to make graphic, contemporary quilts and quilted projects. Explore seven core techniques and multiple projects using each technique--all presented with detailed instructions. Also included is step-by-step direction from Jacquie Gering and Katie Pedersen on tools, materials, and quilting basics, as well as expert advice on color and design. New and seasoned quilting artists will love making stunning bed, wall hanging, pillowcase, and table accessory quilts with this must-have resource. Quilting Modern is a field guide for quilters who strive to break free from tradition and yearn to explore improvisational work. Quilters can make the 21 projects in the book, but will also come away with the new knowledge and skills to apply to their own unique designs. In Quilting Modern, quilters will find the support, structure, and encouragement they need to explore their own creativity and artistic vision.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781620331538"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1620331535"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 176,
+        "printType": "BOOK",
+        "categories": ["Crafts & Hobbies"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.4.3.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=4CFjDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=4CFjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=4CFjDwAAQBAJ&printsec=frontcover&dq=quilting&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=4CFjDwAAQBAJ&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Quilting_Modern.html?hl=&id=4CFjDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Quilting_Modern-sample-epub.acsm?id=4CFjDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=4CFjDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Quilters can make the 21 projects in the book, but will also come away with the new knowledge and skills to apply to their own unique designs."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "7iNjDwAAQBAJ",
+      "etag": "Z9/jOwomg24",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/7iNjDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Quilting From Every Angle",
+        "subtitle": "16 Geometric Designs",
+        "authors": ["Nancy Purvis"],
+        "publisher": "Penguin",
+        "publishedDate": "2015-08-27",
+        "description": "Step-by-step instructions for 16 eye-catching designs! Get ready for a bold, graphic approach to quilting with Quilting from Every Angle! Half square triangles (HSTs) are a classic sewing technique at the foundation of a number of traditional quilt blocks. DIY Blogger Nancy Purvis explores what happens when you play with placement, scale, and color of HSTs to achieve bold designs. And she doesn't stop there! Quilting from Every Angle also includes techniques on Flying Geese blocks, Y-seams, paper-piecing, and more. Whether it's acute or obtuse, Nancy's covering all the angles with valuable tips and tricks to achieving precision points. You'll be seaming together finished works, including quilts, throws, and wall pieces that look like they came from trendy designer catalogs--all while mastering the art of angles!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781632500885"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1632500884"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 337,
+        "printType": "BOOK",
+        "categories": ["Crafts & Hobbies"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.1.2.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=7iNjDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=7iNjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=7iNjDwAAQBAJ&printsec=frontcover&dq=quilting&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=7iNjDwAAQBAJ&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Quilting_From_Every_Angle.html?hl=&id=7iNjDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Quilting_From_Every_Angle-sample-epub.acsm?id=7iNjDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=7iNjDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Quilting from Every Angle also includes techniques on Flying Geese blocks, Y-seams, paper-piecing, and more. Whether it&#39;s acute or obtuse, Nancy&#39;s covering all the angles with valuable tips and tricks to achieving precision points."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "FSVTDwAAQBAJ",
+      "etag": "Rnzh21ybyI0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/FSVTDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Eloquent JavaScript, 3rd Edition",
+        "subtitle": "A Modern Introduction to Programming",
+        "authors": ["Marijn Haverbeke"],
+        "publisher": "No Starch Press",
+        "publishedDate": "2018-12-04",
+        "description": "Completely revised and updated, this best-selling introduction to programming in JavaScript focuses on writing real applications. JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications. This much anticipated and thoroughly revised third edition of Eloquent JavaScript dives deep into the JavaScript language to show you how to write beautiful, effective code. It has been updated to reflect the current state of Java¬Script and web browsers and includes brand-new material on features like class notation, arrow functions, iterators, async functions, template strings, and block scope. A host of new exercises have also been added to test your skills and keep you on track. As with previous editions, Haverbeke continues to teach through extensive examples and immerses you in code from the start, while exercises and full-chapter projects give you hands-on experience with writing your own programs. You start by learning the basic structure of the JavaScript language as well as control structures, functions, and data structures to help you write basic programs. Then you'll learn about error handling and bug fixing, modularity, and asynchronous programming before moving on to web browsers and how JavaScript is used to program them. As you build projects such as an artificial life simulation, a simple programming language, and a paint program, you'll learn how to: - Understand the essential elements of programming, including syntax, control, and data - Organize and clarify your code with object-oriented and functional programming techniques - Script the browser and make basic web applications - Use the DOM effectively to interact with browsers - Harness Node.js to build servers and utilities Isn't it time you became fluent in the language of the Web? * All source code is available online in an inter¬active sandbox, where you can edit the code, run it, and see its output instantly.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781593279516"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1593279515"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 472,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.4.3.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=FSVTDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=FSVTDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=FSVTDwAAQBAJ&printsec=frontcover&dq=javascript&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=FSVTDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=FSVTDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 23.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 23.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=FSVTDwAAQBAJ&rdid=book-FSVTDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 23990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 23990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=FSVTDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "As with previous editions, Haverbeke continues to teach through extensive examples and immerses you in code from the start, while exercises and full-chapter projects give you hands-on experience with writing your own programs."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "qU3rAgAAQBAJ",
+      "etag": "zRlQWoYn1X8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/qU3rAgAAQBAJ",
+      "volumeInfo": {
+        "title": "Speaking JavaScript",
+        "subtitle": "An In-Depth Guide for Programmers",
+        "authors": ["Axel Rauschmayer"],
+        "publisher": "\"O'Reilly Media, Inc.\"",
+        "publishedDate": "2014-02-25",
+        "description": "Like it or not, JavaScript is everywhere these days—from browser to server to mobile—and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position. Speaking JavaScript helps you approach the language with four standalone sections. First, a quick-start guide teaches you just enough of the language to help you be productive right away. More experienced JavaScript programmers will find a complete and easy-to-read reference that covers each language feature in depth. Complete contents include: JavaScript quick start: Familiar with object-oriented programming? This part helps you learn JavaScript quickly and properly. JavaScript in depth: Learn details of ECMAScript 5, from syntax, variables, functions, and object-oriented programming to regular expressions and JSON with lots of examples. Pick a topic and jump in. Background: Understand JavaScript’s history and its relationship with other programming languages. Tips, tools, and libraries: Survey existing style guides, best practices, advanced techniques, module systems, package managers, build tools, and learning resources.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781449364991"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1449364993"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 577,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.5.6.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=qU3rAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=qU3rAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=qU3rAgAAQBAJ&printsec=frontcover&dq=javascript&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=qU3rAgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=qU3rAgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 42.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 42.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=qU3rAgAAQBAJ&rdid=book-qU3rAgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 42990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 42990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=qU3rAgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position. Speaking JavaScript helps you approach the language with four standalone sections."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "_uTRAwAAQBAJ",
+      "etag": "83sJsC+UtGA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/_uTRAwAAQBAJ",
+      "volumeInfo": {
+        "title": "JavaScript & jQuery",
+        "subtitle": "Interactive Front-End Web Development",
+        "authors": ["Jon Duckett"],
+        "publisher": "John Wiley & Sons",
+        "publishedDate": "2014-07-21",
+        "description": "Jon Duckett’s best-selling, full-color introduction to JavaScript—filled with techniques to make websites more interactive and engaging Learn JavaScript and jQuery from the author who has inspired hundreds of thousands of beginner-to-intermediate coders. Build upon your HTML and CSS foundation and take the next step in your programming journey with JavaScript. The world runs on JavaScript and the most influential tech companies are looking for new and experienced programmers alike to bring their websites to life. Finding the right resources online can be overwhelming. Take a confident step in the right direction by choosing the simplicity of JavaScript & jQuery: Interactive Front-End Web Development by veteran web developer and programmer Jon Duckett. Widely regarded for setting a new standard for those looking to learn and master web development, Jon Duckett has inspired web developers through his inventive teaching format pioneered in his bestselling HTML & CSS: Design and Build Websites. He also has helped global brands like Philips, Nike, and Xerox create innovative digital solutions, designing and delivering web and mobile projects with impact and the customer at the forefront. In JavaScript & jQuery, Duckett shares his real-world insights in his unique and highly visual style: Provides an efficient and user-friendly structure that allows readers to progress through the chapters in a self-paced format Combines full-color design graphics and engaging photography to explain the topics in an in-depth yet straightforward manner Recreates techniques seen on other websites such as sliders, content filters, form validation, Ajax content updates, and much more Is perfect for anyone looking to create web applications and games, design mobile apps, or redesign a website using popular web development tools JavaScript & jQuery is clear and actionable, providing organized instruction in ways that other online courses, tutorials, and books have yet to replicate. For readers seeking a personable yet professional guide to using JavaScript in the real world, this one-of-a-kind guide is for you. JavaScript & jQuery is also available as part of two hardcover and paperback sets depending on your web design and development needs: Web Design with HTML, CSS, JavaScript, and jQuery Set Paperback: 9781118907443 Hardcover: 9781119038634 Front-End Back-End Development with HTML, CSS, JavaScript, jQuery, PHP, and MySQL Set Paperback: 9781119813095 Hardcover: 9781119813088",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781118871652"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1118871650"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 640,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=_uTRAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=_uTRAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=_uTRAwAAQBAJ&pg=PP1&dq=javascript&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=_uTRAwAAQBAJ&dq=javascript&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/JavaScript_jQuery.html?hl=&id=_uTRAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/JavaScript_jQuery-sample-pdf.acsm?id=_uTRAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=_uTRAwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This book will teach you how to make your websites more interactive, engaging, and usable. It does this by combining programming theory with examples that demonstrate how JavaScript and jQuery are used on popular sites."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "xPw4ngEACAAJ",
+      "etag": "3Qcb6bTDF5I",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/xPw4ngEACAAJ",
+      "volumeInfo": {
+        "title": "The World of Fantacy",
+        "authors": ["Carole Heng"],
+        "publishedDate": "2011",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9675516216"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789675516214"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 49,
+        "printType": "BOOK",
+        "categories": ["Fantasy fiction, English"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=xPw4ngEACAAJ&dq=fantacy&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=xPw4ngEACAAJ&dq=fantacy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_World_of_Fantacy.html?hl=&id=xPw4ngEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=xPw4ngEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Dv_vzwEACAAJ",
+      "etag": "iryQX/Ovgi8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Dv_vzwEACAAJ",
+      "volumeInfo": {
+        "title": "Believe on Fantacy",
+        "authors": ["Law O Attraction", "Poonam V Kodwate"],
+        "publisher": "Amazon Kdp",
+        "publishedDate": "2023-04",
+        "description": "The ''believe on fantasy'' by Poonam Kodwate is a self-help book that motivate the reader about understanding universal laws and about making changes in life by using laws it remains hidden for most people. ''Believe on fantasy'' may transform how people look at things and lead them on to the road of success more happiness and more joy. '' Believe on fantasy'' is essential resource for anyone who looking to improve their mental well being and change their circumstances. It show you how to create anything you want to be or have. It guide you on how to replace old mindset that doesnot serve you wwell with a new one that help you to create the life you really want. If you want to win, you must take action and take action now.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9358910941"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789358910940"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Dv_vzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Dv_vzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=Dv_vzwEACAAJ&dq=fantacy&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=Dv_vzwEACAAJ&dq=fantacy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Believe_on_Fantacy.html?hl=&id=Dv_vzwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Dv_vzwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The &#39;&#39;believe on fantasy&#39;&#39; by Poonam Kodwate is a self-help book that motivate the reader about understanding universal laws and about making changes in life by using laws it remains hidden for most people."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "wPA3zwEACAAJ",
+      "etag": "3/K8gUNEIa8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/wPA3zwEACAAJ",
+      "volumeInfo": {
+        "title": "Fantacy",
+        "subtitle": "Daughter of Fate",
+        "authors": ["Vanessa Marie Caron"],
+        "publisher": "Doucette Publishing",
+        "publishedDate": "2022-08-27",
+        "description": "\"Bravery is not the absence of fear, but the ability to move forward despite that fear.\" Sixteen-year-old Arianna is at a crisis with her identity. Frustrated, she searches for answers to her past, but instead she finds herself teleported to a whole other fantasy world, a world suffering under the tyrannical rule of the Shadow Lord, Keshieena. Unintentionally branded as the powerful Stone Bearer, the protector of peace, and also the Fated One prophesied to restore the lost heir to the throne, Arianna embarks on a dangerous journey against all manner of evil. At first homesick and hesitant, Arianna doubts herself and her newfound abilities, but she is not alone. Under the protection and tutelage of her elusive yet handsome male companion, Arianna tests the limits of her powers, uncovering potential she'd never dreamed of. Together, they pursue a series of archived texts that lead them closer to finding the rightful heir to Fantacy's throne. However, with the Stone of Power in her possession, Arianna becomes the Shadow Lord's personal target. The stakes rise further as Arianna develops an attachment to the suffering peoples of Fantacy. Although Arianna might not have found the answers to her past, her future has become clear: find the heir, protect the Stone and bring back peace. Friendship, love, action and adventure... Part One in the Fantacy Duology, Fantacy: Daughter of Fate, is geared towards young adults and teenagers who have a nostalgic fondness for the brightness of Narnia fused with the romance and intrigue of more contemporary works such as Throne of Glass and Eragon.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1778109314"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781778109317"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 350,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=wPA3zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=wPA3zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=wPA3zwEACAAJ&dq=fantacy&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=wPA3zwEACAAJ&dq=fantacy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Fantacy.html?hl=&id=wPA3zwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=wPA3zwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Part One in the Fantacy Duology, Fantacy: Daughter of Fate, is geared towards young adults and teenagers who have a nostalgic fondness for the brightness of Narnia fused with the romance and intrigue of more contemporary works such as ..."
+      }
+    }
+  ]
+}

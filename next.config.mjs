@@ -11,6 +11,12 @@ const nextConfig = {
         port: "",
         pathname: "**",
       },
+      {
+        protocol: "http",
+        hostname: "books.google.com",
+        port: "",
+        pathname: "**",
+      },
     ],
   },
   webpack(config) {

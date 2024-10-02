@@ -38,3 +38,4 @@ next-env.d.ts
 # Site-specific:
 /.vscode
 app/types/env.d.ts
+*.test

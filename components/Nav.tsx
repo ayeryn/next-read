@@ -33,7 +33,7 @@ const Nav = async () => {
           </li>
           <li>
             <Link
-              href="/private/books"
+              href="/books"
               className="text-neutral hover:text-primary hover:font-semibold">
               Books
             </Link>

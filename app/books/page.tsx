@@ -9,7 +9,7 @@ const BooksPage = () => {
 
   const fetchData = async () => {
     const GOOGLE_BOOKS_API =
-      "https://www.googleapis.com/books/v1/volumes?q=filter%3Dfree-ebooks&key=AIzaSyB5Ua3EiJz7ndCHtMvj6FNHJe4nBKzOpgQ";
+      "https://www.googleapis.com/books/v1/volumes?q=filter%3Dfree-ebooks& projection=lite&key=AIzaSyB5Ua3EiJz7ndCHtMvj6FNHJe4nBKzOpgQ";
     try {
       const response = await fetch(GOOGLE_BOOKS_API);
       if (!response.ok) {
@@ -19,7 +19,6 @@ const BooksPage = () => {
       const data = await response.json();
       setData(data);
       console.log("Fetching Google Books...");
-      // console.log(typeof data, data.items[]); // object
     } catch (error) {
       console.error(error);
     }

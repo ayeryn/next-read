@@ -8,10 +8,12 @@ const BooksPage = () => {
   const [data, setData] = useState(null);
 
   const fetchData = async () => {
-    const GOOGLE_BOOKS_API =
-      "https://www.googleapis.com/books/v1/volumes?q=filter%3Dfree-ebooks& projection=lite&key=AIzaSyB5Ua3EiJz7ndCHtMvj6FNHJe4nBKzOpgQ";
+    const request =
+      process.env.GOOGLE_BOOKS_API_URL + process.env.GOOGLE_BOOKS_API_KEY;
+    console.log("req = ", request);
+
     try {
-      const response = await fetch(GOOGLE_BOOKS_API);
+      const response = await fetch(request);
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }

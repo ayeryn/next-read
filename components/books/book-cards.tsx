@@ -1,10 +1,7 @@
-import {
-  IconBook,
-  IconBrandGoogleFilled,
-  IconPlaylistAdd,
-} from "@tabler/icons-react";
+import { IconBook } from "@tabler/icons-react";
 import Image from "next/image";
 import React from "react";
+import { ViewBookButton, AddBookButton } from "./book-buttons";
 
 type Book = {
   id: string;
@@ -25,44 +22,31 @@ type BookObject = {
 
 const BookCard = ({ book }: { book: Book }) => {
   // Strip information from Book object
-  const book_title = book.volumeInfo?.title || "";
-  const book_authors = book.volumeInfo?.authors || [];
-  const book_thumbnail =
+  const bookTitle = book.volumeInfo?.title || "";
+  const bookAuthors = book.volumeInfo?.authors || [];
+  const bookThumbnail =
     book.volumeInfo.imageLinks?.thumbnail ||
     book.volumeInfo.imageLinks?.smallThumbnail ||
     "";
-  const book_link = book.volumeInfo?.infoLink || "";
+  const bookLink = book.volumeInfo?.infoLink || "";
 
   return (
     <div className="card card-side card-bordered w-96 h-30 shadow-xl">
       <figure className="ml-5">
-        {book_thumbnail ? (
-          <Image
-            src={book_thumbnail}
-            alt={book_title}
-            width={300}
-            height={300}
-          />
+        {bookThumbnail ? (
+          <Image src={bookThumbnail} alt={bookTitle} width={300} height={300} />
         ) : (
           <IconBook />
         )}
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-primary">{book_title}</h2>
+        <h2 className="card-title text-primary">{bookTitle}</h2>
         <p className="text-primary">
-          Author(s): {book_authors ? book_authors.join(", ") : "Unknown"}
+          Author(s): {bookAuthors ? bookAuthors.join(", ") : "Unknown"}
         </p>
         <div className="card-actions justify-center mt-3">
-          {/* TODO: dropdown - open in */}
-          <button className="btn btn-sm">
-            <a href={book_link} target="_blank">
-              <IconBrandGoogleFilled />
-            </a>
-          </button>
-          <button className="btn btn-sm">
-            {/* TODO: dropdown showing my lists */}
-            <IconPlaylistAdd />
-          </button>
+          <ViewBookButton bookLink={bookLink} />
+          <AddBookButton bookId={book.id} />
         </div>
       </div>
     </div>

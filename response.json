@@ -150,8 +150,8 @@
       "etag": "cRZUWtd6MzI",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/PBNjDwAAQBAJ",
       "volumeInfo": {
-        "title": "Quilting - The Complete Guide",
-        "authors": ["Darlene Zimmerman"],
+        "title": "Hello World",
+        "authors": ["Test Test"],
         "publisher": "Penguin",
         "publishedDate": "2013-10-07",
         "description": "Quilting - The Complete Guide lives up to its name! It covers all of the essential knowledge you need to complete any quilting project: the tools, formulas, methods, finishing techniques, and quilt care you need to know. It's the perfect companion for all quilting projects.",
@@ -183,10 +183,58 @@
           "smallThumbnail": "http://books.google.com/books/content?id=PBNjDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
           "thumbnail": "http://books.google.com/books/content?id=PBNjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
+        "previewLink": "http://books.google.com/books?id=4CFjDwAAQBAJ&printsec=frontcover&dq=quilting&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=4CFjDwAAQBAJ&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Quilting_Modern.html?hl=&id=4CFjDwAAQBAJ"
+      },
+      "searchInfo": {
+        "textSnippet": "Quilting - The Complete Guide lives up to its name!"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "7iNjDwAAQBAJ",
+      "etag": "Z9/jOwomg24",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/7iNjDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Quilting From Every Angle",
+        "subtitle": "16 Geometric Designs",
+        "authors": ["Nancy Purvis"],
+        "publisher": "Penguin",
+        "publishedDate": "2015-08-27",
+        "description": "Step-by-step instructions for 16 eye-catching designs! Get ready for a bold, graphic approach to quilting with Quilting from Every Angle! Half square triangles (HSTs) are a classic sewing technique at the foundation of a number of traditional quilt blocks. DIY Blogger Nancy Purvis explores what happens when you play with placement, scale, and color of HSTs to achieve bold designs. And she doesn't stop there! Quilting from Every Angle also includes techniques on Flying Geese blocks, Y-seams, paper-piecing, and more. Whether it's acute or obtuse, Nancy's covering all the angles with valuable tips and tricks to achieving precision points. You'll be seaming together finished works, including quilts, throws, and wall pieces that look like they came from trendy designer catalogs--all while mastering the art of angles!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781632500885"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1632500884"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 337,
+        "printType": "BOOK",
+        "categories": ["Crafts & Hobbies"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.1.2.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=7iNjDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=7iNjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
         "language": "en",
-        "previewLink": "http://books.google.com/books?id=PBNjDwAAQBAJ&printsec=frontcover&dq=quilting&hl=&cd=3&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=PBNjDwAAQBAJ&dq=quilting&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/Quilting_The_Complete_Guide.html?hl=&id=PBNjDwAAQBAJ"
+        "previewLink": "http://books.google.com/books?id=7iNjDwAAQBAJ&printsec=frontcover&dq=quilting&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=7iNjDwAAQBAJ&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Quilting_From_Every_Angle.html?hl=&id=7iNjDwAAQBAJ"
       },
       "saleInfo": {
         "country": "US",
@@ -201,17 +249,17 @@
         "textToSpeechPermission": "ALLOWED",
         "epub": {
           "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Quilting_The_Complete_Guide-sample-epub.acsm?id=PBNjDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          "acsTokenLink": "http://books.google.com/books/download/Quilting_From_Every_Angle-sample-epub.acsm?id=7iNjDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
         },
         "pdf": {
           "isAvailable": false
         },
-        "webReaderLink": "http://play.google.com/books/reader?id=PBNjDwAAQBAJ&hl=&source=gbs_api",
+        "webReaderLink": "http://play.google.com/books/reader?id=7iNjDwAAQBAJ&hl=&source=gbs_api",
         "accessViewStatus": "SAMPLE",
         "quoteSharingAllowed": false
       },
       "searchInfo": {
-        "textSnippet": "Quilting - The Complete Guide lives up to its name!"
+        "textSnippet": "Quilting from Every Angle also includes techniques on Flying Geese blocks, Y-seams, paper-piecing, and more. Whether it&#39;s acute or obtuse, Nancy&#39;s covering all the angles with valuable tips and tricks to achieving precision points."
       }
     }
   ]

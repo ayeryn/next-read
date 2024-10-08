@@ -12,20 +12,6 @@ export default async function Page({
   const listId = params.id;
   if (!listId) redirect("/private/lists");
 
-  const books = [
-    {
-      title: "The Scarlet Letter",
-      authors: ["Arthur Conan Doyle"],
-      publisher: "Penguin Random House",
-      publishedDate: "1800-01-01",
-      description: "The first Sherlock Holmes story",
-      categories: ["classics", ""],
-      pageCount: Number,
-      thumbnail: String,
-      googleId: { type: String, unique: true }, // Use Google Book ID to avoid duplicates
-    },
-  ];
-
   const list = await getListById(listId);
   return (
     <main>

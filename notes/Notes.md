@@ -13,6 +13,7 @@
     - [Moving Client Components Down the Tree](#moving-client-components-down-the-tree)
     - [Passing props from Server to Client Components (Serialization)](#passing-props-from-server-to-client-components-serialization)
   - [Interleaving SC and CC](#interleaving-sc-and-cc)
+    - [Important Things to Remember](#important-things-to-remember)
     - [Unsupported Pattern](#unsupported-pattern)
       - [Importing Server Components into Client Components](#importing-server-components-into-client-components)
     - [Supported Pattern](#supported-pattern)
@@ -91,7 +92,6 @@ export async function getData() {
 
 - At first glance, it appears that `getData` works on both the server and the client.
 - Notice that it contains an **`API_KEY`**, written with the intention that it would **only ever be executed on the server**.
--
 
 ## Client Component Patterns
 
@@ -141,6 +141,11 @@ If your CC depend on data that is _not_ serializable, you can [fetch data on the
 
 ## Interleaving SC and CC
 
+### Important Things to Remember
+
+- When a new request is made to the server, all Server Components are rendered **FIRST**.
+- You **cannot** import a Server Component into a Client Component module.
+
 It's helpful to visualize your UI as a **tree of components**.
 
 - `RootLayout`: Server Component by default
@@ -150,7 +155,7 @@ Within those client subtrees, you can still nest Server Components or call Serve
 
 - During a request-response lifecycle, your code moves from the server to the client.
   - If you need to access data or resources on the server while on the client, you'll be making a **new** request to the server - not switching back and forth
-- When a new request is made to the server, all Server Components are rendered first, including those nested inside Client Components.
+- **When a new request is made to the server, all Server Components are rendered first, including those nested inside Client Components**.
   - The rendered result ([RSC Payload][16]) will contain references to the locations of Client Components.
   - Then, on the client, React uses the RSC Payload to reconcile Server and Client Components into a single tree.
 - Since Client Components are rendered after Server Components, you **cannot** import a Server Component into a Client Component module (since it would require a new request back to the server).

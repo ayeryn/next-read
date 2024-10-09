@@ -7,7 +7,7 @@ import { User } from "./models/user";
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [Google, Github],
   pages: {
-    signIn: "/signin",
+    signIn: "/login",
   },
   callbacks: {
     async session({ session, token }) {

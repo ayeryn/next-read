@@ -2,9 +2,17 @@
 import BookCards from "@/components/books/book-cards";
 import { useState } from "react";
 import mockData from "@/response.json";
+import { IconSearch } from "@tabler/icons-react";
 
 const jsonData = mockData || [];
 const BooksPage = () => {
+  // TODO:
+  // Ok why don't we put the following code into a server action?
+  // We then get the data from it + get myLists
+
+  // TODO: but this has to be client because of search. think about passing
+  // server component as props
+
   // const [data, setData] = useState(null);
 
   // const fetchData = async () => {
@@ -34,6 +42,10 @@ const BooksPage = () => {
       <h2 className="text-2xl font-semibold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
         Books
       </h2>
+      <label className="input input-bordered flex items-center gap-2 mt-5">
+        <input type="text" className="grow" placeholder="Search" />
+        <IconSearch />
+      </label>
       {/* {!data ? <p>Loading...</p> : <BookCards data={data} />} */}
       <BookCards data={jsonData} />
     </div>

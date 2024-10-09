@@ -31,7 +31,7 @@ const BookCard = ({ book }: { book: Book }) => {
   const bookLink = book.volumeInfo?.infoLink || "";
 
   return (
-    <div className="card card-side card-bordered w-96 h-30 shadow-xl bg-primary">
+    <div className="card card-side card-bordered w-96 h-30 shadow-xl bg-primary bg-opacity-60">
       <figure className="ml-5">
         {bookThumbnail ? (
           <Image src={bookThumbnail} alt={bookTitle} width={300} height={300} />

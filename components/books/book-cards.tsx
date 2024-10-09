@@ -31,7 +31,7 @@ const BookCard = ({ book }: { book: Book }) => {
   const bookLink = book.volumeInfo?.infoLink || "";
 
   return (
-    <div className="card card-side card-bordered w-96 h-30 shadow-xl">
+    <div className="card card-side card-bordered w-96 h-30 shadow-xl bg-primary">
       <figure className="ml-5">
         {bookThumbnail ? (
           <Image src={bookThumbnail} alt={bookTitle} width={300} height={300} />
@@ -39,11 +39,9 @@ const BookCard = ({ book }: { book: Book }) => {
           <IconBook />
         )}
       </figure>
-      <div className="card-body">
-        <h2 className="card-title text-primary">{bookTitle}</h2>
-        <p className="text-primary">
-          Author(s): {bookAuthors ? bookAuthors.join(", ") : "Unknown"}
-        </p>
+      <div className="card-body text-primary-content">
+        <h2 className="card-title">{bookTitle}</h2>
+        <p>Author(s): {bookAuthors ? bookAuthors.join(", ") : "Unknown"}</p>
         <div className="card-actions justify-center mt-3">
           <ViewBookButton bookLink={bookLink} />
           <AddBookButton bookId={book.id} />

@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="lemonade">
+    <html lang="en">
       <body className={inter.className}>
         <div className="flex h-full min-h-screen w-full flex-col">
           <Nav />

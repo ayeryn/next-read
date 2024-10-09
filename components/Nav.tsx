@@ -9,8 +9,8 @@ const Nav = async () => {
   const user = session?.user;
 
   return (
-    <div className="mx-auto flex h-16 w-full items-center">
-      <nav className="navbar bg-base-200">
+    <div className="mx-auto flex h-16 w-full items-center justify-center">
+      <nav className="navbar bg-accent">
         <div className="flex-1">
           <Link href="/" className="flex gap-2 flex-center">
             <Image
@@ -27,14 +27,14 @@ const Nav = async () => {
           <li>
             <Link
               href="/users"
-              className="text-neutral hover:text-primary hover:font-semibold">
+              className="text-secondary-content hover:text-primary">
               Users
             </Link>
           </li>
           <li>
             <Link
               href="/books"
-              className="text-neutral hover:text-primary hover:font-semibold">
+              className="text-secondary-content hover:text-primary">
               Books
             </Link>
           </li>
@@ -42,7 +42,7 @@ const Nav = async () => {
             <li>
               <Link
                 href="/private/lists"
-                className="text-neutral hover:text-primary hover:font-semibold">
+                className="text-secondary-content hover:text-primary">
                 My Lists
               </Link>
             </li>
@@ -53,8 +53,8 @@ const Nav = async () => {
             <>
               <Button asChild variant="secondary">
                 <Link
-                  href="/signin"
-                  className="text-neutral hover:text-primary hover:font-semibold">
+                  href="/login"
+                  className="text-secondary-content hover:text-primary">
                   Sign In
                 </Link>
               </Button>
@@ -67,7 +67,7 @@ const Nav = async () => {
               }}>
               <Button
                 variant="secondary"
-                className="btn-sm text-neutral hover:text-primary hover:font-semibold">
+                className="btn-sm text-secondary-content hover:text-primary">
                 Sign Out
               </Button>
             </form>
@@ -76,7 +76,8 @@ const Nav = async () => {
             <label className="grid cursor-pointer place-items-center">
               <input
                 type="checkbox"
-                value="synthwave"
+                // value="forest"
+                value="pastel"
                 className="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
               />
               <svg

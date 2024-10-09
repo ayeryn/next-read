@@ -1,9 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { getSession } from "@/lib/getSession";
 import { signOut } from "@/auth";
-import { IconMoonFilled, IconSunFilled } from "@tabler/icons-react";
+import { IconBooks, IconMoonFilled, IconSunFilled } from "@tabler/icons-react";
 
 const Nav = async () => {
   const session = await getSession();
@@ -12,14 +11,13 @@ const Nav = async () => {
   return (
     <div className="mx-auto flex h-16 w-full items-center justify-center">
       <nav className="navbar bg-accent">
+        <div className="flex-none mr-2">
+          <Link href="/">
+            <IconBooks className="w-9 h-9 stroke-primary-content fill-secondary col-start-1 row-start-1" />
+          </Link>
+        </div>
         <div className="flex-1">
-          <Link href="/" className="flex gap-2 flex-center">
-            <Image
-              src="/assets/images/logo.svg"
-              alt="logo picture"
-              width={40}
-              height={40}
-            />
+          <Link href="/">
             <p className="font-medium">Next Read</p>
           </Link>
         </div>
@@ -44,7 +42,7 @@ const Nav = async () => {
               <Link
                 href="/private/lists"
                 className="text-secondary-content hover:text-primary">
-                My Lists
+                Lists
               </Link>
             </li>
           ) : (
@@ -77,8 +75,8 @@ const Nav = async () => {
             <label className="grid cursor-pointer place-items-center">
               <input
                 type="checkbox"
-                // value="forest"
-                value="pastel"
+                value="coffee"
+                // value="pastel"
                 className="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
               />
               <IconSunFilled className="h-4 w-4 col-start-1 row-start-1 stroke-base-100 fill-base-100" />

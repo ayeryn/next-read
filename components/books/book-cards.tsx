@@ -1,4 +1,4 @@
-import { IconBook } from "@tabler/icons-react";
+import { IconSquareForbid } from "@tabler/icons-react";
 import Image from "next/image";
 import React from "react";
 import { ViewBookButton, AddBookButton } from "./book-buttons";
@@ -25,23 +25,25 @@ const BookCard = ({ book }: { book: Book }) => {
   const bookTitle = book.volumeInfo?.title || "";
   const bookAuthors = book.volumeInfo?.authors || [];
   const bookThumbnail =
-    book.volumeInfo.imageLinks?.thumbnail ||
     book.volumeInfo.imageLinks?.smallThumbnail ||
+    book.volumeInfo.imageLinks?.thumbnail ||
     "";
   const bookLink = book.volumeInfo?.infoLink || "";
 
   return (
-    <div className="card card-side card-bordered w-96 h-30 shadow-xl bg-primary bg-opacity-60">
+    <div className="card card-side card-compact card-bordered w-96 h-30 shadow-xl border-primary">
       <figure className="ml-5">
         {bookThumbnail ? (
-          <Image src={bookThumbnail} alt={bookTitle} width={300} height={300} />
+          <Image src={bookThumbnail} alt={bookTitle} width={250} height={250} />
         ) : (
-          <IconBook />
+          <IconSquareForbid />
         )}
       </figure>
-      <div className="card-body text-primary-content">
-        <h2 className="card-title">{bookTitle}</h2>
-        <p>Author(s): {bookAuthors ? bookAuthors.join(", ") : "Unknown"}</p>
+      <div className="card-body text-base-content">
+        <h4 className="card-title">{bookTitle}</h4>
+        <p className="text-sm">
+          Author(s): {bookAuthors ? bookAuthors.join(", ") : "Unknown"}
+        </p>
         <div className="card-actions justify-center mt-3">
           <ViewBookButton bookLink={bookLink} />
           <AddBookButton bookId={book.id} />

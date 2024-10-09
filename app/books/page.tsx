@@ -1,8 +1,5 @@
 "use client";
-import BookCards from "@/components/books/book-cards";
-import { useState } from "react";
 import mockData from "@/response.json";
-import { IconSearch } from "@tabler/icons-react";
 
 const jsonData = mockData || [];
 const BooksPage = () => {
@@ -14,13 +11,6 @@ const BooksPage = () => {
   // server component as props
 
   // const [data, setData] = useState(null);
-  const [searchText, setSearchText] = useState("");
-
-  const handleSearchChange = (e) => {
-    const searchtext = e.target.value;
-    setSearchText(searchtext);
-    console.log("Search text = ", searchtext);
-  };
 
   // const fetchData = async () => {
   //   const request =
@@ -47,23 +37,10 @@ const BooksPage = () => {
   return (
     <div className="flex flex-col w-full justify-center items-center my-5">
       <h2 className="text-2xl font-semibold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
-        Books
+        My Books
       </h2>
-      <label className="input input-bordered flex items-center gap-2 mt-5">
-        <input
-          type="text"
-          className="grow"
-          placeholder="Search"
-          value={searchText}
-          onChange={handleSearchChange}
-        />
-        <IconSearch />
-      </label>
-      {/* {!data ? <p>Loading...</p> : <BookCards data={data} />} */}
-      <BookCards data={jsonData} />
     </div>
   );
 };
 
 export default BooksPage;
-4;

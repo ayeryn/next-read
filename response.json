@@ -144,77 +144,7 @@
         "textSnippet": "Quilters can make the 21 projects in the book, but will also come away with the new knowledge and skills to apply to their own unique designs."
       }
     },
-    {
-      "kind": "books#volume",
-      "id": "7iNjDwAAQBAJ",
-      "etag": "Z9/jOwomg24",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/7iNjDwAAQBAJ",
-      "volumeInfo": {
-        "title": "Quilting From Every Angle",
-        "subtitle": "16 Geometric Designs",
-        "authors": ["Nancy Purvis"],
-        "publisher": "Penguin",
-        "publishedDate": "2015-08-27",
-        "description": "Step-by-step instructions for 16 eye-catching designs! Get ready for a bold, graphic approach to quilting with Quilting from Every Angle! Half square triangles (HSTs) are a classic sewing technique at the foundation of a number of traditional quilt blocks. DIY Blogger Nancy Purvis explores what happens when you play with placement, scale, and color of HSTs to achieve bold designs. And she doesn't stop there! Quilting from Every Angle also includes techniques on Flying Geese blocks, Y-seams, paper-piecing, and more. Whether it's acute or obtuse, Nancy's covering all the angles with valuable tips and tricks to achieving precision points. You'll be seaming together finished works, including quilts, throws, and wall pieces that look like they came from trendy designer catalogs--all while mastering the art of angles!",
-        "industryIdentifiers": [
-          {
-            "type": "ISBN_13",
-            "identifier": "9781632500885"
-          },
-          {
-            "type": "ISBN_10",
-            "identifier": "1632500884"
-          }
-        ],
-        "readingModes": {
-          "text": true,
-          "image": false
-        },
-        "pageCount": 337,
-        "printType": "BOOK",
-        "categories": ["Crafts & Hobbies"],
-        "maturityRating": "NOT_MATURE",
-        "allowAnonLogging": true,
-        "contentVersion": "0.1.2.0.preview.2",
-        "panelizationSummary": {
-          "containsEpubBubbles": false,
-          "containsImageBubbles": false
-        },
-        "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=7iNjDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=7iNjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-        },
-        "language": "en",
-        "previewLink": "http://books.google.com/books?id=7iNjDwAAQBAJ&printsec=frontcover&dq=quilting&hl=&cd=1&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=7iNjDwAAQBAJ&dq=quilting&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/Quilting_From_Every_Angle.html?hl=&id=7iNjDwAAQBAJ"
-      },
-      "saleInfo": {
-        "country": "US",
-        "saleability": "NOT_FOR_SALE",
-        "isEbook": false
-      },
-      "accessInfo": {
-        "country": "US",
-        "viewability": "PARTIAL",
-        "embeddable": true,
-        "publicDomain": false,
-        "textToSpeechPermission": "ALLOWED",
-        "epub": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Quilting_From_Every_Angle-sample-epub.acsm?id=7iNjDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
-        },
-        "pdf": {
-          "isAvailable": false
-        },
-        "webReaderLink": "http://play.google.com/books/reader?id=7iNjDwAAQBAJ&hl=&source=gbs_api",
-        "accessViewStatus": "SAMPLE",
-        "quoteSharingAllowed": false
-      },
-      "searchInfo": {
-        "textSnippet": "Quilting from Every Angle also includes techniques on Flying Geese blocks, Y-seams, paper-piecing, and more. Whether it&#39;s acute or obtuse, Nancy&#39;s covering all the angles with valuable tips and tricks to achieving precision points."
-      }
-    },
+
     {
       "kind": "books#volume",
       "id": "FSVTDwAAQBAJ",

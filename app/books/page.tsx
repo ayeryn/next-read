@@ -14,6 +14,13 @@ const BooksPage = () => {
   // server component as props
 
   // const [data, setData] = useState(null);
+  const [searchText, setSearchText] = useState("");
+
+  const handleSearchChange = (e) => {
+    const searchtext = e.target.value;
+    setSearchText(searchtext);
+    console.log("Search text = ", searchtext);
+  };
 
   // const fetchData = async () => {
   //   const request =
@@ -43,7 +50,13 @@ const BooksPage = () => {
         Books
       </h2>
       <label className="input input-bordered flex items-center gap-2 mt-5">
-        <input type="text" className="grow" placeholder="Search" />
+        <input
+          type="text"
+          className="grow"
+          placeholder="Search"
+          value={searchText}
+          onChange={handleSearchChange}
+        />
         <IconSearch />
       </label>
       {/* {!data ? <p>Loading...</p> : <BookCards data={data} />} */}
@@ -53,3 +66,4 @@ const BooksPage = () => {
 };
 
 export default BooksPage;
+4;

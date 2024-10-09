@@ -23,7 +23,7 @@ export function ViewBookButton({ bookLink }: { bookLink: string }) {
   );
 }
 
-export async function AddBookButton({ bookId }: { bookId: string }) {
+export function AddBookButton({ bookId }: { bookId: string }) {
   // FIXME: Something wrong with how the components are put together
   // const lists = await getMyLists();
 

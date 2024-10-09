@@ -14,12 +14,12 @@ export default async function Page({
 
   const list = await getListById(listId);
   return (
-    <main>
+    <div>
       <div className="w-full flex flex-col justify-center items-center">
         <h1 className="text-2xl font-semibold">{list.name}</h1>
         <p className="text-sm mt-2">{list.description}</p>
       </div>
       <BookList />
-    </main>
+    </div>
   );
 }

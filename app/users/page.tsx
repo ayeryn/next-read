@@ -17,8 +17,8 @@ const Users = async () => {
   // });
   const users: User[] = await res.json();
   return (
-    <div className="flex flex-col items-center justify-between">
-      <h2 className="text-2xl font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
+    <div className="flex flex-col items-center justify-between my-5">
+      <h2 className="text-2xl font-semibold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
         Users
       </h2>
       <table className="table table-bordered max-w-3xl">

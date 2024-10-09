@@ -14,7 +14,7 @@ export default async function Lists() {
   // TODO: Add a message for no lsits
   const lists = await getMyLists();
   return (
-    <div className="flex flex-col items-center justify-center w-full">
+    <div className="flex flex-col items-center justify-center w-full my-5">
       <div className="grid grid-cols-3 gap-4">
         <div></div>
         <div>

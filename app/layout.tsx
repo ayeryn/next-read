@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "../components/Nav";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Next Read",
@@ -16,13 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="lemonade">
+    <html lang="en">
       <body className={inter.className}>
-        <div className="flex h-full min-h-screen w-full flex-col justify-between">
+        <div className="flex h-full min-h-screen w-full flex-col">
           <Nav />
-          <main className="mx-auto w-full flex-auto px-4 py-4 sm:px-6 md:py-6">
-            {children}
-          </main>
+          <main className={styles.main}>{children}</main>
         </div>
       </body>
     </html>

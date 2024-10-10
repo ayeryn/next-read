@@ -145,7 +145,7 @@ export async function updateList(listId: string, formData: FormData) {
 export async function deleteList(listId: string) {
   try {
     await connectToDb();
-    const existingList = await List.findByIdAndDelete(listId);
+    await List.findByIdAndDelete(listId);
     console.log("List deleted successfully");
   } catch (error) {
     return { message: "Database error: Failed to delete list" };

@@ -4,11 +4,17 @@
 
 - Styling
 
-  - Tailwind CSS
+  - [x] Tailwind CSS
+  - [ ] `BookCard`: center the image and content on the card
 
 - Google Books API
-  - Hook up and get data
-  - Implement search bar on GB data
+
+  - [x] Hook up and get data
+  - [ ] Implement search bar on GB data
+
+- Further NextJS learning
+  - [ ] [Promises, async/await](https://javascript.info/callbacks)
+  - [ ]
 
 ## Tailwind CSS
 
@@ -23,3 +29,10 @@
 1. List creation
    1. Use Server Component `Form` in `create-list/page.tsx`
    2. Fetch data using `Form` without API endpoints
+
+## 24-10-2
+
+**Hit roadblock**: Need to re-org server and client components on `books` page so that we can
+
+- get data from google books API
+- get `myLists` from mongodb

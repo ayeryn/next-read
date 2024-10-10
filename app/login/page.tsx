@@ -9,7 +9,7 @@ const SignIn = async () => {
   if (user) redirect("/");
 
   return (
-    <div className="mt-10 max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white border border-[#121212]  dark:bg-black">
+    <div className="mt-10 max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input border border-primary">
       <div className="flex flex-col items-center justify-center">
         {/**
          * flex: to control how flex items both grow and shrink.
@@ -18,14 +18,12 @@ const SignIn = async () => {
          * items-center: to align items along the center of the container’s cross axis:
          * justify-center: to justify items along the center of the container’s main axis:
          */}
-        <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-          So happy to see you here!
-        </h2>
-        <p className="text-neutral-600 text-sm max-w-sm my-2 dark:text-neutral-300">
+        <h2 className="font-semibold text-2xl">Read your way..</h2>
+        <p className="text-sm max-w-sm my-2">
           Please choose from the following login methods.
         </p>
       </div>
-      <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+      <div className="bg-gradient-to-r from-transparent via-neutral-300 to-transparent my-8 h-[1px] w-full" />
 
       <section className="flex flex-col space-y-4">
         <form
@@ -34,12 +32,10 @@ const SignIn = async () => {
             await signIn("google");
           }}>
           <button
-            className="relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+            className="btn btn-secondary relative group/btn flex space-x-2 items-center justify-start px-4 w-full rounded-md h-10 font-medium shadow-input"
             type="submit">
-            <IconBrandGoogle className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              Google
-            </span>
+            <IconBrandGoogle className="h-4 w-4" />
+            <span className="text-sm">Google</span>
           </button>
         </form>
         <form
@@ -48,12 +44,10 @@ const SignIn = async () => {
             await signIn("github");
           }}>
           <button
-            className="relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+            className=" btn btn-secondary relative group/btn flex space-x-2 items-center justify-start px-4 w-full rounded-md h-10 font-medium shadow-input"
             type="submit">
-            <IconBrandGithub className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              Github
-            </span>
+            <IconBrandGithub className="h-4 w-4" />
+            <span className="text-sm">Github</span>
           </button>
         </form>
       </section>

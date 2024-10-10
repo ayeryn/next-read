@@ -29,12 +29,12 @@ const Nav = async () => {
                 tabIndex={0}
                 role="button"
                 className="btn btn-ghost btn-circle avatar">
-                <div className="rounded-full">
+                <div className="rounded-full border-2 border-primary">
                   <Image
                     src={user.image}
                     alt="profile"
-                    width={37}
-                    height={37}
+                    width={34}
+                    height={34}
                   />
                 </div>
               </div>

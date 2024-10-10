@@ -1,13 +1,13 @@
-// import ProductCard from "./components/ProductCard/ProductCard";
-import styles from "./page.module.css";
+import Feed from "@/components/feed";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1 className="text-primary text-4xl font-bold">
+    <div className="w-full flex flex-col justify-center items-center">
+      <h1 className="text-base-content text-3xl font-semibold mt-10 mb-5 sm:text-4xl">
         What is your next read?
       </h1>
-      <p>Welcome to your personalized reading list!</p>
-    </main>
+      <div className="bg-gradient-to-r from-transparent via-primary to-transparent my-6 h-[1px] w-full" />
+      <Feed />
+    </div>
   );
 }

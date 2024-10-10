@@ -2,15 +2,15 @@ import mongoose, { Schema } from "mongoose";
 
 const listSchema = new mongoose.Schema(
   {
-    name: {
-      type: String,
-      required: [true, "List name is required!"],
-      // TODO: Find a way to make a listname unique to one user
-    },
-    description: { type: String },
+    description: { type: String, required: true, default: "My reading list" },
     creator: {
       type: Schema.Types.ObjectId,
       ref: "User",
+    },
+    books: {
+      type: [String],
+      required: true,
+      default: [],
     },
   },
   {

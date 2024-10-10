@@ -2,7 +2,7 @@
 
 import { IconSearch } from "@tabler/icons-react";
 import { useState } from "react";
-import mockData from "@/response.json";
+import mockData from "@/data/response.json";
 import BookCards from "./books/book-cards";
 
 const jsonData = mockData || [];
@@ -29,10 +29,10 @@ export default function Feed() {
         <IconSearch />
       </label>
 
-      <div className="flex flex-col w-full justify-center items-center my-5">
-        {/* {!data ? <p>Loading...</p> : <BookCards data={data} />} */}
-        <BookCards data={jsonData} />
-      </div>
+      {/* <div className="flex flex-col w-full justify-center items-center my-5"> */}
+      {/* {!data ? <p>Loading...</p> : <BookCards data={data} />} */}
+      {/* <BookCards data={jsonData} /> */}
+      {/* </div> */}
     </div>
   );
 }

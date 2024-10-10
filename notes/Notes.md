@@ -38,6 +38,9 @@
 - [Google Books](#google-books)
   - [Axios](#axios)
     - [CommonJS Usage](#commonjs-usage)
+- [HTML and CSS](#html-and-css)
+  - [`<main>`](#main)
+    - [Usage Notes](#usage-notes)
 - [Links](#links)
 
 <!-- /code_chunk_output -->
@@ -481,6 +484,20 @@ const axios = require("axios").default;
 // axios.<method> will now provide autocomplete and parameter typings
 ```
 
+# HTML and CSS
+
+## `<main>`
+
+[Official Doc][17]
+
+The `<main>` HTMl element represents the dominant content of the `<body>` of a document.
+
+### Usage Notes
+
+- The content of `<main>` should be **unique** to the document. Content that is repeated across a set of documents or document sections such as sidebars, navigation links, copyright information, site logos, and search forms shouldn't be included unless the search form is the main function of the page.
+- `<main>` doesn't contribute to the document's outline. It's strictly **informative**.
+- aka. Unlike elements like `<body>` or `<h2>`, `<main>` doesn't affect the DOM's concept of the structure of the page
+
 # Links
 
 [1]: https://react.dev/reference/react/hooks
@@ -499,3 +516,4 @@ const axios = require("axios").default;
 [14]: https://nextjs.org/docs/app/building-your-application/data-fetching/fetching#fetching-data-on-the-client
 [15]: https://nextjs.org/docs/app/building-your-application/routing/route-handlers
 [16]: https://nextjs.org/docs/app/building-your-application/rendering/server-components#what-is-the-react-server-component-payload-rsc
+[17]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main

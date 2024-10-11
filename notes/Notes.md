@@ -25,9 +25,14 @@
 - [Rendering](#rendering)
   - [Static Rendering](#static-rendering)
   - [Dynamic Rendering](#dynamic-rendering)
+- [Technologies](#technologies)
 - [TypeScript](#typescript)
   - [Interface](#interface)
 - [Mock Data](#mock-data)
+- [React DnD](#react-dnd)
+  - [Items and Types](#items-and-types)
+  - [Monitors](#monitors)
+    - [Example - Chess Board](#example---chess-board)
 - [Tailwind CSS](#tailwind-css)
   - [`global.css`](#globalcss)
   - [CSS Module](#css-module)
@@ -320,6 +325,18 @@ function Example() {
 
 - Render at request time
 
+# Technologies
+
+| Next.js (framework)             |
+| ------------------------------- |
+| React (JS library)              |
+| JavaScript $\subset$ TypeScript |
+
+- **JSX** is a syntax extension for JavaScript that lets you write HTML-like markup inside a Javascript file.
+- **TypeScript** is a superset of **javascript** that adds **static typing** to JS.
+- **React** is a JavaScript library for building **user interfaces**.
+- **Next.js** is a framework built on top of React that adds server-side rendering (SSR), static site generation(SSG), routing, and other features out of the box, making it easier to build full-fledged web applications.
+
 # TypeScript
 
 ## Interface
@@ -356,6 +373,44 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
  * "completed": false
  * }
  */
+```
+
+# React DnD
+
+[Official Doc][18]
+
+## Items and Types
+
+An **item** is a plain JavaScript object _describing_ what's being dragged.  
+A **type** is a string (or a symbol) uniquely identifying a _whole class of items_ in your application.
+
+- The types let you specify which drag sources and drop targets are compatible.
+
+## Monitors
+
+Drag and drop is inherently stateful.
+
+- Either a drag operation is in progress, or it isn't.
+- Either there is a current type and a current item, or there isn't.
+
+React DnD exposes this state to your components via a few tiny wrappers over the internal state storage called the **monitors**.
+
+- The monitors let you update the props of your components in response to the drag and drop state changes.
+
+For each component that needs to track the drag and drop state, you can define a _collecting function_ that retrieves the relevant bits of it from the monitors.
+
+### Example - Chess Board
+
+Goal: to highlight the Chess cells when a piece is being dragged.
+A collecting function for the `Cell` component might look like this:
+
+```js
+function collect(monitor) {
+  return {
+    highlighted: monitor.canDrop(),
+    hovered: monitor.isOver(),
+  };
+}
 ```
 
 # Tailwind CSS
@@ -517,3 +572,4 @@ The `<main>` HTMl element represents the dominant content of the `<body>` of a d
 [15]: https://nextjs.org/docs/app/building-your-application/routing/route-handlers
 [16]: https://nextjs.org/docs/app/building-your-application/rendering/server-components#what-is-the-react-server-component-payload-rsc
 [17]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main
+[18]: https://react-dnd.github.io/react-dnd/docs/overview
